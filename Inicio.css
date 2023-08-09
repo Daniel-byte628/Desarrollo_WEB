@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: auto;
+    height: auto;
+    background-image:  url("https://img.freepik.com/fotos-premium/color-azul-fondo-borroso_39406-183.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: auto;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("https://img.freepik.com/fotos-premium/color-azul-fondo-borroso_39406-183.jpg");
+    background-position: center center; /* Centra la imagen en el contenedor */
+}
+
+.rounded-image {
+    border-radius: 50%; /* Esto crea bordes redondeados */
+    width: 80px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 270px;
+}
+.exception{
+    margin-right: 90px;
+}
+.navbar ul {
+    margin-right: 200px;
+}
+.navbar ul  li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(19, 20, 41);
+    font-family: 'Tektur', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    font: bold;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(88, 88, 252);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;  
+}
+
+.navbar a:hover {
+    color: rgb(79, 79, 211); 
+}
+.navbar a:hover:after {
+    transform: scaleX(1);   
+}
+
+.container{
+    position: relative;
+    width: auto;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 5px rgb(0,0,0,0.2);
+ 
+}
+
+.container .slide-row{
+    display: flex;
+    height: 90%;
+    border: solid;
+    border-color: green;  
+}
+
+.container .slide-row .slide{
+    min-width: 100%;
+    justify-content: center;
+    transform: translateX(20%);
+}
+
+.container .slide-row .slide img{
+    width: 60%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container span.next, .container span.prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 16px;
+    color: #040303;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container span.next{
+    right: 10px;
+}
+
+.container span.prev{
+    left: 10px;
+}
+
+.container span.next:hover, .container span.prev:hover{
+    background-color: #0e0d0d;
+    opacity: 0.8;
+    color: #fffcfc;
+}
+
+
