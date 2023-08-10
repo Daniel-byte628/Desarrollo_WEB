@@ -38,7 +38,10 @@
     <span class="next">&#10095;</span>
     <span class="prev">&#10094;</span>
 
-    <section class="slide-row">
+    <section class="slide-row">  <!--se debe de colocar la duplicacion de la ultima imagen-->
+        <div class="slide"  id="lastimageduplicate">
+          <img src="img/1.jpeg">
+        </div>
         <div class="slide">
           <img src="img/2.jpg">
         </div>
@@ -54,12 +57,19 @@
         <div class="slide">
           <img src="img/1.jpeg">
         </div>
-        <div class="slide">
-          <img src="img/1.jpeg">
+        <div class="slide" id="firstimageduplicate">
+          <img src="img/2.jpg">
         </div>
     </section>
-  </div>
 
+    <section class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </section>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>

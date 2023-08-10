@@ -1,48 +1,78 @@
-const btnLeft = document.querySelector(".btn-left"),
-      btnRight = document.querySelector(".btn-right"),
-      slider = document.querySelector("#slider"),
-      sliderSection = document.querySelectorAll(".slider-section");
+const carouselRow = document.querySelector('.slide-row')
+const carouselSlides = document.getElementsByClassName('slide')
+const dots = document.getElementsByClassName('dot')
+const nextBtn = document.querySelector('.next')
+const prevBtn = document.querySelector('.prev')
+
+let index=1
+var width
 
 
-btnLeft.addEventListener("click", e => moveToLeft())
-btnRight.addEventListener("click", e => moveToRight())
+function slideWidth(){
+    width=carouselSlides[0].clientWidth
+}
+slideWidth()
+window.addEventListener('resize',slideWidth)
+carouselRow.style.transform=`translateX(`+(-width*index)+`px)`
 
-setInterval(() => {
-    moveToRight()
-}, 3000);
+nextBtn.addEventListener('click',nextSlide)
+function nextSlide(){
+    if(index>=carouselSlides.length-1){
+        return
+    }
+    carouselRow.style.transition='transform 0.4s ease-out'
+    index++
+    carouselRow.style.transform=`translateX(`+(-width*index)+`px)`
+    dotslabel()
+}
+
+prevBtn.addEventListener('click',prevSlide)
+function prevSlide(){
+    if(index<=0){
+        return
+    }
+    carouselRow.style.transition='transform 0.4s ease-out'
+    index--
+    carouselRow.style.transform=`translateX(`+(-width*index)+`px)`
+    dotslabel()
+}
+
+carouselRow.addEventListener('transitionend',()=>{
+    if(carouselSlides[index].id==='firstimageduplicate'){
+        carouselRow.style.transition='none'
+        index=carouselSlides.length-index
+        carouselRow.style.transform=`translateX(`+(-width*index)+`px)`
+        dotslabel()
+    }
+    if(carouselSlides[index].id==='lastimageduplicate'){
+        carouselRow.style.transition='none'
+        index=carouselSlides.length-2
+        carouselRow.style.transform=`translateX(`+(-width*index)+`px)`
+        dotslabel()
+    }
+})
 
 
-let operacion = 0,
-    counter = 0,
-    widthImg = 100 / sliderSection.length;
+function autoslide(){
+    deleteInterval=setInterval(timer,3000)
+    function timer(){
+       nextSlide()
+}
+}
+autoslide()
 
-function moveToRight() {
-    if (counter >= sliderSection.length-1) {
-        counter = 0;
-        operacion = 0;
-        slider.style.transform = `translate(-${operacion}%)`;
-        slider.style.transition = "none";
-        return;
-    } 
-    counter++;
-    operacion = operacion + widthImg;
-    slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
-    
-}  
+const maincontainer = document.querySelector('.container')
+maincontainer.addEventListener('mouseover',()=>{
+    clearInterval(deleteInterval)
+})
 
-function moveToLeft() {
-    counter--;
-    if (counter < 0 ) {
-        counter = sliderSection.length-1;
-        operacion = widthImg * (sliderSection.length-1)
-        slider.style.transform = `translate(-${operacion}%)`;
-        slider.style.transition = "none";
-        return;
-    } 
-    operacion = operacion - widthImg;
-    slider.style.transform = `translate(-${operacion}%)`;
-    slider.style.transition = "all ease .6s"
-    
-    
-}   
+maincontainer.addEventListener('mouseout',()=>{
+    autoslide()
+})
+
+function dotslabel(){
+    for(let i=0;i<dots.length;i++){
+        dots[i].className= dots[i].className.replace(' active','')
+    }
+    dots[index-1].className+=' active'
+}
