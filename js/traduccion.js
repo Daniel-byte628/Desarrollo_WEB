@@ -48,6 +48,7 @@ const translations = {
         footernosotros:"Nosotros",
         footerpreguntas:"Preguntas frecuentes",
         footerwhiskervet:"Somos una veterinaria especializada en la salud y cuidado de los felinos.",
+        more: "Más información",
     },
     en: {
       welcome: "Welcome",
@@ -97,7 +98,8 @@ const translations = {
         footerveterinarias: "Veterinaries",
         footernosotros: "About Us",
         footerpreguntas: "Frequently Asked Questions",
-        footerwhiskervet: "We are a specialized clinic for the health and care of felines."        
+        footerwhiskervet: "We are a specialized clinic for the health and care of felines." ,       
+        more: "More information",
     }
   };
 
