@@ -53,6 +53,8 @@ const translations = {
         mision: "Misión",
         horario:"Horario",
         equipomedico:"Equipo Médico",
+        instalaciones:"Instalaciones y Equipamiento",
+        contacto:"Contacto y Ubicación",
     },
     en: {
       welcome: "Welcome",
@@ -108,6 +110,8 @@ const translations = {
         mision: "Mission",
         horario:"Schedule",
         equipomedico:"Medic Equipment",
+        instalaciones:"Facilities and Equipment",
+        contacto:"Contact and Location",
 
     }
   };
