@@ -49,6 +49,10 @@ const translations = {
         footerpreguntas:"Preguntas frecuentes",
         footerwhiskervet:"Somos una veterinaria especializada en la salud y cuidado de los felinos.",
         more: "Más información",
+        sobre: "Sobre Whisker Vet",
+        mision: "Misión",
+        horario:"Horario",
+        equipomedico:"Equipo Médico",
     },
     en: {
       welcome: "Welcome",
@@ -100,6 +104,11 @@ const translations = {
         footerpreguntas: "Frequently Asked Questions",
         footerwhiskervet: "We are a specialized clinic for the health and care of felines." ,       
         more: "More information",
+        sobre: "About Whisker Vet",
+        mision: "Mission",
+        horario:"Schedule",
+        equipomedico:"Medic Equipment",
+
     }
   };
 
