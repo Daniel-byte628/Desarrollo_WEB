@@ -1,3 +1,13 @@
+document.getElementById('nextcomida').onclick = function(){
+    let lists = document.querySelectorAll('.itemcomida');
+    document.getElementById('slidecomida').appendChild(lists[0]);
+}
+document.getElementById('prevcomida').onclick = function(){
+    let lists = document.querySelectorAll('.itemcomida');
+    document.getElementById('slidecomida').prepend(lists[lists.length - 1]);
+}
+
+
 document.querySelector('.arrow-link').addEventListener('click', function (e) {
     // Prevenir el comportamiento predeterminado del enlace
     e.preventDefault();
@@ -25,3 +35,5 @@ ScrollSmoother.create({
 	wrapper: '.wrapper',
 	content: '.content'
 })
+
+
