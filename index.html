@@ -31,7 +31,7 @@
 
 <body>
 
-	<div class="wrapper">
+	<div id="main" class="wrapper">
 		<div class="content">
 			<header class="main-header">
 				<div class="layers">
@@ -51,8 +51,10 @@
 			</header>
 		</div>
 	</div>
-	<nav class="menu">
-		<a class="navbar"><img src="img/logo.png" alt="Imagen izquierda" class="navbar-image"></a>
+	<nav class="menu" class="menu navbar">
+		
+			<a class="navbar" href="#main"><img src="img/logo.png" alt="Imagen izquierda" class="navbar-image"></a>
+		
 		<a class="navbar" href="#sec1">
 			<div class="navbar-text" data-translate="menunosotros">Acerca de Nosotros</div>
 		</a>
@@ -71,6 +73,7 @@
 		<a class="navbar"><i class="fa-regular fa-circle-user fa-3x" style="color: #ffffff;"></i></a>
 	</nav>
 
+	
 	<!--INFORMACIÓN-->
 	<header id="sec1" class="seccion1">
 		<div class="column">
@@ -87,11 +90,14 @@
 		<div class="column">
 			<img src="./img/fondo-seccion1.png" alt="Imagen">
 		</div>
-	</header>
+	</header id="sec2">
 
 	<!--SERVICIOS-->
-	<header id="sec2" class="seccion2">
-		<h2 data-translate="menuservicios">Servicios</h2>
+	<header  class="seccion2">
+		<div class="servicios-title-container">
+			<h2 class="titulos2">Servicios</h2>
+		</div>
+
 		<div class="tilegrid">
 			<div class="slider">
 				<div class="card">
@@ -351,7 +357,7 @@
 		
 	</header>
 	<!--CARRUSEL-->
-	<div class="centrar">
+	<div id="sec4" class="centrar">
 		<div class="contenedorcomida">
 			<div id="slidecomida">
 				<div class="itemcomida" style="background-image: url(img/imgCarrusel1/gatoPrinciapl.jpg);">
