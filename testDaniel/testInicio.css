@@ -293,7 +293,7 @@ body{
 }
 .itemcomida{
     width:200px;
-    height:300px;
+    height:400px;
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.5s;
@@ -301,7 +301,7 @@ body{
     position: absolute;
     z-index: 1;
     top:50%;
-    transform: translate(0,-50%);
+    transform: translate(50%,-50%);
     border-radius: 20px;
     box-shadow:  0 30px 50px #505050;
 }
@@ -332,10 +332,10 @@ body{
     position: absolute;
     top:50%;
     left:100px;
-    width:300px;
+    width:600px;
     text-align: justify;
     padding:0;
-    color:#eee;
+    color:#000000;
     transform: translate(0,-50%);
     display: none;
     font-family: system-ui;
@@ -346,12 +346,13 @@ body{
 }
 .itemcomida .name{
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bolder;
     opacity: 0;
     animation:showcontent 1s ease-in-out 1 forwards
 }
 .itemcomida .des{
     margin:20px 0;
+    font-size: 30px;
     opacity: 0;
     animation:showcontent 1s ease-in-out 0.3s 1 forwards
 }
