@@ -3,6 +3,36 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+.menu {
+    position: relative;
+    z-index: 9999;
+    background-image: url("img/superior.png");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+	height: 100px;
+  }
+
+  .navbar {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar-image {
+    width: 60px; /* Ajusta el tamaño según tu imagen */
+    height: 60px; /* Ajusta el tamaño según tu imagen */
+  }
+
+  .navbar-text {
+    flex-grow: 1;
+    text-align: center;
+	color: white;
+  }
+
+
 .arrow-link {
     display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
     text-align: center; /* Centra la flecha horizontalmente */
@@ -39,6 +69,7 @@ body {
 	background-color: #010101;
 	font-family: raleway_f, sans-serif;
 	line-height: 1.55;
+	overflow-x: hidden;
 }
 .main-header {
 	position: relative;
@@ -218,6 +249,7 @@ body {
     height:100%;
     background-color: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
+	overflow: hidden;
 }
 .itemcomida{
     width:200px;
@@ -321,6 +353,7 @@ body {
 .footer-dark {
     color: #f0f9ff;
     background-color: #121817;
+	overflow: hidden;
 }
 
 .footer-dark h3 {
@@ -369,7 +402,7 @@ body {
 .container-footer {
     max-width: 1200px;
     margin: 0 auto;
-    
+	overflow: hidden;
 }
 
 
