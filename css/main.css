@@ -56,6 +56,24 @@
 	  color: white;
   }
 
+/* Estilos para la lista desplegable */
+.dropdown {
+  padding: 12px;
+  font-size: 16px; /* Aumenta el tamaño de fuente */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Estilos para las opciones de la lista desplegable */
+.dropdown option {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
  /*---------------------------- .. ---------------------------- */
 .arrow-link {
     display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
