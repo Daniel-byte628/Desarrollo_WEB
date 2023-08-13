@@ -80,10 +80,10 @@ function dotslabel(){
 
 
  document.getElementById('nextcomida').onclick = function(){
-    let lists = document.querySelectorAll('.item');
+    let lists = document.querySelectorAll('.itemcomida');
     document.getElementById('slidecomida').appendChild(lists[0]);
 }
 document.getElementById('prevcomida').onclick = function(){
-    let lists = document.querySelectorAll('.item');
+    let lists = document.querySelectorAll('.itemcomida');
     document.getElementById('slidecomida').prepend(lists[lists.length - 1]);
 }
