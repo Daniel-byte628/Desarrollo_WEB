@@ -20,11 +20,7 @@
 	height: 100vh;
 	width: 100vw;
 }
-.holabri{
-	height: 100vh;
-	width: 100vw;
-	background-color: #9d822b;
-}
+
 :root {
 	--index: calc(1vw + 1vh);
 	--text: #e7e7e0;
@@ -107,3 +103,37 @@ body {
 	margin-top: calc(var(--index) * -.75);
 }
 
+
+/* Sección 1 */
+.seccion1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #9d822b;
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección de los elementos */
+}
+
+.column p {
+    max-width: 90%; /* El texto ocupa todo el ancho de la columna */
+    margin-left: auto;
+}
+
+.column img {
+    height: 100vh; /* La imagen ocupará todo el alto de la columna */
+    display: block;
+    margin-left: auto; /* Empujamos la imagen hacia el borde derecho */
+}
+
+/* Sección 2 */
+.seccion2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #849478;
+}
