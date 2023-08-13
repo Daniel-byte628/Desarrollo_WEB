@@ -4,6 +4,25 @@
 	box-sizing: border-box;
 }
 
+.dropdown {
+	padding: 10px;
+	font-size: 16px; /* Aumenta el tamaño de fuente */
+	border: 1px solid #f9f9f9;
+	border-radius: 4px;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: raleway_f;
+	src: url(../fonts/raleway-regular.woff2);
+	font-weight: bold;
+  }
+  
+  /* Estilos para las opciones de la lista desplegable */
+  .dropdown option {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+  }
+
 .menu {
     position: relative;
     z-index: 9999;

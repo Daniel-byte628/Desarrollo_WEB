@@ -17,6 +17,7 @@
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 
 	<script src="js/app.js" defer></script>
+	<script src="js/traduccion.js" defer></script>
 
 </head>
 
@@ -27,9 +28,9 @@
 			<header class="main-header">
 				<div class="layers">
 					<div class="layer__header">
-						<div class="layers__caption">BIENVENIDOS</div>
+						<div class="layers__caption" data-translate="welcome" >BIENVENIDOS</div>
 						<div class="layers__caption">.</div>
-						<div class="layers__caption">A</div>
+						<div class="layers__caption" data-translate="welcome">A</div>
 						<div class="layers__title">WHISKERVET</div>
 						<a href="#sec1" class="arrow-link">
 							<img src="img/huella.png" alt="Flecha hacia abajo" class="arrow-icon">
@@ -53,6 +54,14 @@
 		<a class="navbar" href="#sec3">
 			<div class="navbar-text">Testimonios</div>
 		</a>
+		<label for="language">Selecciona un idioma:</label>
+		<select id="language" class="dropdown">
+  		<option value="es">Español</option>
+  		<option value="en">Inglés</option>
+		</select>
+
+
+
 		<a class="navbar"><img src="img/login.png" alt="Imagen derecha" class="navbar-image"></a>
 	</nav>
 
