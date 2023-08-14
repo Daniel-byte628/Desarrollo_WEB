@@ -45,6 +45,27 @@
     font-weight: bold;
   }
 
+  /* Estilo para la barra de navegación */
+.menu {
+  position: relative;
+  background-color: #333; /* Cambia esto según tus colores */
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: background-color 0.3s ease; /* Agregamos una transición suave */
+}
+
+/* Estilo para la barra de navegación fija */
+.menu.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
   .navbar-image {
      /* Ajusta el tamaño según tu imagen */
     height: 60px; /* Ajusta el tamaño según tu imagen */
@@ -266,8 +287,23 @@
   margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
+.titulos2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 /* Sección 3 */
 
+.seccion3 {
+	height: 100vh;
+	width: 100vw;
+	background-color: #849478;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 .testimonios-title {
 	margin-bottom: 20px;

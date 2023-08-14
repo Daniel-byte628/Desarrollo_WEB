@@ -11,6 +11,26 @@ $(document).ready(function(){
     });
 });
 
+// Script para cambiar la clase de la barra de navegación
+window.addEventListener("scroll", function() {
+    var navbar = document.querySelector(".menu");
+    if (window.scrollY > 0) {
+      navbar.classList.add("fixed");
+    } else {
+      navbar.classList.remove("fixed");
+    }
+  });
+  
+// Script para cambiar la clase de la barra de navegación
+window.addEventListener("scroll", function() {
+    var navbar = document.querySelector(".menu");
+    if (window.scrollY > 0) {
+        navbar.classList.add("navbar-fixed");
+    } else {
+        navbar.classList.remove("navbar-fixed");
+    }
+});
+
 
 document.getElementById('nextcomida').onclick = function(){
     let lists = document.querySelectorAll('.itemcomida');
