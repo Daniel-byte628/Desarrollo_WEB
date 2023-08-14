@@ -173,76 +173,130 @@
     margin-left: auto; /* Empujamos la imagen hacia el borde derecho */
 }
 
-/* Sección 2 */
+ /*---------------------------- Seccion 2: Servicios ---------------------------- */
+
 .seccion2 {
     height: 100vh;
     width: 100vw;
     background-color: #d8d4c9;
 }
 
+.seccion2 img{
+ 
+  object-fit: contain;
 
-/* Sección 3 */
+}
 
+ /*---------------------------- Seccion 3: Testimonios ---------------------------- */
 .seccion3 {
 	height: 100vh;
 	width: 100vw;
-	background-color: #849478;
-	padding: 50px 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	background-color: #082003;
+	
+	/* display: flex;
+/* 	flex-direction: column; 
+	justify-content: center; */
+}
+
+#contenedor-silueta-testigos{
+  height: 10vh;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+#testimonios-title-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .testimonios-title {
 	margin-bottom: 20px;
+  color: #9D822B;
+  
 }
 
 .testimonios-container {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+  grid-template-areas: 
+    "testimonio1   testimonio2  testimonio3"
+    "testimonio4   testimonio5  testimonio6";
+	row-gap: 50px;
 	align-items: center;
+  margin-top: 100px;
+  padding: 60px;
 }
 
-.testimonios-row {
+#testimonio1{
+  grid-area: testimonio1;
+}
+#testimonio2{
+  grid-area: testimonio2;
+}
+#testimonio3{
+  grid-area: testimonio3;
+}
+#testimonio4{
+  grid-area: testimonio4;
+}
+#testimonio5{
+  grid-area: testimonio5;
+}
+#testimonio6{
+  grid-area: testimonio6;
+}
+
+/* .testimonios-row {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
-}
+} */
 
 .testimony-box {
-	background-color: #d8d4c9;
-	height: f;
-	border: 1px solid black;
-	padding: 10px;
-	margin: 10px;
+  background-color: #d8d4c9;
+  height: f;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius:30px;
+  background-color: #9D822B;
+  
   }
   
   .stars {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #9d822b;
+	color: #422717;
   }
   
   .testimonial-text {
 	font-size: 16px;
 	line-height: 1.5;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  
   }
   
   .testimonial-author {
-	display: flex;
+	  display: flex;
+    align-items: center;
   }
   
   .testimonial-author img {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+	/* width: 100px; */
+    height: 100px;
+    border-radius: 50%;
   }
   
   .testimonial-author p {
-	margin-left: 10px;
+	  margin-left: 10px;
+    font-weight: bold;
+    
   }
 
 /*CARRUSEL*/
