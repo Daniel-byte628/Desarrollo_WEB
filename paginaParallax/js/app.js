@@ -1,3 +1,16 @@
+$(document).ready(function(){
+    $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.slider-prev'),
+        nextArrow: $('.slider-next'),
+    });
+
+    $('.card').hover(function() {
+        $(this).toggleClass('expanded');
+    });
+});
+
 document.getElementById('nextcomida').onclick = function(){
     let lists = document.querySelectorAll('.itemcomida');
     document.getElementById('slidecomida').appendChild(lists[0]);

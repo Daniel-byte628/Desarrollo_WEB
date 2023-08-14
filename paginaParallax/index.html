@@ -17,6 +17,7 @@
 	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 
 	<script src="js/app.js" defer></script>
+	<script src="js/traduccion.js" defer></script>
 
 	<script src="https://kit.fontawesome.com/677cb8d762.js" crossorigin="anonymous"></script> <!-- Usado para poner iconos programaticamente-->
 	
@@ -30,9 +31,9 @@
 			<header class="main-header">
 				<div class="layers">
 					<div class="layer__header">
-						<div class="layers__caption">BIENVENIDOS</div>
+						<div class="layers__caption" data-translate="welcome" >BIENVENIDOS</div>
 						<div class="layers__caption">.</div>
-						<div class="layers__caption">A</div>
+						<div class="layers__caption" data-translate="welcome">A</div>
 						<div class="layers__title">WHISKERVET</div>
 						<a href="#sec1" class="arrow-link">
 							<img src="img/huella.png" alt="Flecha hacia abajo" class="arrow-icon">
@@ -79,11 +80,117 @@
 
 	<!--SERVICIOS-->
 	<header id="sec2" class="seccion2">
-		
+		<h2>Servicios</h2>
+		<div class="tilegrid">
+			<div class="slider">
+				<div class="card">
+					<div class="card-content">
+						<p>Exámenes exhaustivos y evaluaciones de la salud general de tu gato, incluyendo revisión de signos vitales, peso, ojos, oídos y sistema respiratorio.</p>
+					</div>
+					<div class="card-image">
+						<h3>Consulta Médica Integral</h3>
+						<img src="img/imgCarrusel2/gato1.jpg" alt="Consulta Médica Integral">
+					</div>
+				</div>
 
-			<a>SLIDER PROPUESTO POR DAVID</a>
+				<div class="card">
+					<div class="card-content">
+						<p>Programa de inmunización personalizado para proteger a tu gato contra enfermedades comunes, además de estrategias de control de parásitos internos y externos. </p>
+					</div>
+					<div class="card-image">
+						<h3>Vacunación y Desparasitación</h3>
+						<img src="img/imgCarrusel2/gato2.jpg" alt="Vacunación y Desparasitación">
+					</div>
+				</div>
 
-	</header>
+				<div class="card">
+					<div class="card-content">
+						<p>Procedimientos quirúrgicos seguros para controlar la población y mejorar la salud de tu gato, reduciendo riesgos de enfermedades y comportamientos no deseados.</p>
+					</div>
+					<div class="card-image">
+						<h3>Cirugía de Esterilización</h3>
+						<img src="img/imgCarrusel2/gato3.jpg" alt="Cirugía de Esterilización">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<p>Mantenimiento dental especializado para prevenir enfermedades bucales y mejorar la calidad de vida de tu gato, incluyendo limpiezas y extracciones.</p>
+					</div>
+					<div class="card-image">
+						<h3>Odontología Felina</h3>
+						<img src="img/imgCarrusel2/gato4.jpg" alt="Odontología Felina">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<p>Atención inmediata y cuidados intensivos en situaciones de emergencia, brindando respaldo médico las 24 horas.</p>
+					</div>
+					<div class="card-image">
+						<h3>Urgencias y Cuidados Intensivos</h3>
+						<img src="img/imgCarrusel2/gato5.jpg" alt="Urgencias y Cuidados Intensivos">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<p>Diagnóstico avanzado mediante radiografías y ecografías, que permiten detectar problemas internos y guiar tratamientos precisos.</p>
+					</div>
+					<div class="card-image">
+						<h3>Exámenes de Imagenología</h3>
+						<img src="img/imgCarrusel2/gato6.png" alt="Exámenes de Imagenología">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<p>Asesoramiento nutricional personalizado para garantizar que tu gato reciba la dieta adecuada para su edad, condición y necesidades específicas.</p>
+					</div>
+					<div class="card-image">
+						<h3>Nutrición y Dietética Felina</h3>
+						<img src="img/imgCarrusel2/gato7.jpg" alt="Nutrición y Dietética Felina">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<p>Evaluación de comportamiento y recomendaciones para abordar problemas conductuales, proporcionando un ambiente armonioso para tu gato y tu hogar. </p>
+					</div>
+					<div class="card-image">
+						<h3>Consultas de Comportamiento</h3>
+						<img src="img/imgCarrusel2/gato8.jpg" alt="Consultas de Comportamiento">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<p>Cuidados enfocados en gatos de edad avanzada, incluyendo evaluación de enfermedades relacionadas con la vejez y recomendaciones para mantener su calidad de vida. </p>
+					</div>
+					<div class="card-image">
+						<h3>Atención Geriátrica</h3>
+						<img src="img/imgCarrusel2/gato9.jpg" alt="Atención Geriátrica">
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<p>Espacio y atención especializada para gatos que requieren hospitalización y seguimiento durante su proceso de recuperación tras cirugías o enfermedades. </p>
+					</div>
+					<div class="card-image">
+						<h3>Hospitalización y Recuperación</h3>
+						<img src="img/imgCarrusel2/gato10.png" alt="Hospitalización y Recuperación">
+					</div>
+				</div>
+	
+				
+			</div>
+			<div class="slider-nav">
+				<div class="slider-prev"><i class="fas fa-chevron-left"></i></div>
+				<div class="slider-next"><i class="fas fa-chevron-right"></i></div>
+			</div>
+		</div>
+			</header>
 
 	<!--TESTIMONIOS-->
 	<header id="sec3" class="seccion3">
