@@ -1,20 +1,44 @@
+  /*---------------------------- Fonts ---------------------------- */
+ @font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-regular.woff2);
+}
+@font-face {
+	font-family: raleway_f;
+	src: url(../fonts/raleway-black.woff2);
+	font-weight: 900;
+}
+ 
+ /*---------------------------- Tags Generales ---------------------------- */
+
+ body {
+	background-color: #010101;
+	font-family: raleway_f, sans-serif;
+	line-height: 1.55;
+	overflow-x: hidden;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-.menu {
+
+
+  /*---------------------------- Barra de Navegacion ---------------------------- */
+  .menu {
     position: relative;
     z-index: 9999;
     background-image: url("img/superior.png");
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
-	height: 100px;
+	  height: 100px;
   }
-
+  
   .navbar {
     text-decoration: none;
     color: white;
@@ -22,17 +46,17 @@
   }
 
   .navbar-image {
-    width: 60px; /* Ajusta el tamaño según tu imagen */
+     /* Ajusta el tamaño según tu imagen */
     height: 60px; /* Ajusta el tamaño según tu imagen */
   }
 
   .navbar-text {
     flex-grow: 1;
     text-align: center;
-	color: white;
+	  color: white;
   }
 
-
+ /*---------------------------- .. ---------------------------- */
 .arrow-link {
     display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
     text-align: center; /* Centra la flecha horizontalmente */
@@ -43,7 +67,7 @@
 .arrow-icon {
     width: 30vh; /* Ajusta el tamaño de la imagen según tus necesidades */
     height: 30vh;
-	rotate: 140deg;
+	  rotate: 140deg;
 }
 
 .hola{
@@ -56,21 +80,8 @@
 	--text: #e7e7e0;
 	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
-@font-face {
-	font-family: raleway_f;
-	src: url(../fonts/raleway-regular.woff2);
-}
-@font-face {
-	font-family: raleway_f;
-	src: url(../fonts/raleway-black.woff2);
-	font-weight: 900;
-}
-body {
-	background-color: #010101;
-	font-family: raleway_f, sans-serif;
-	line-height: 1.55;
-	overflow-x: hidden;
-}
+
+
 .main-header {
 	position: relative;
 }
