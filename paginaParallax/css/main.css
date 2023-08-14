@@ -56,6 +56,15 @@
 	  color: white;
   }
 
+ /*---------------------------- SECCION 1 ---------------------------- */
+
+ #titulo-seccion1{
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-size:xx-large;
+ }
+
+
  /*---------------------------- .. ---------------------------- */
 .arrow-link {
     display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
